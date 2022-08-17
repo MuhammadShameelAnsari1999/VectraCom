@@ -1,0 +1,96 @@
+// C++ code
+//
+
+#define A_Red 5
+#define A_Yellow 6
+#define A_Green 7
+
+#define B_Red 13
+#define B_Yellow 12
+#define B_Green 11
+
+#define C_Red 10
+#define C_Yellow 9
+#define C_Green 8
+
+#define D_Red 2
+#define D_Yellow 3
+#define D_Green 4
+
+void setup()
+{
+  pinMode(A_Red, OUTPUT);
+  pinMode(A_Yellow, OUTPUT);
+  pinMode(A_Green, OUTPUT);
+  
+  pinMode(B_Red, OUTPUT);
+  pinMode(B_Yellow, OUTPUT);
+  pinMode(B_Green, OUTPUT);
+  
+  pinMode(C_Red, OUTPUT);
+  pinMode(C_Yellow, OUTPUT);
+  pinMode(C_Green, OUTPUT);
+  
+  pinMode(D_Red, OUTPUT);
+  pinMode(D_Yellow, OUTPUT);
+  pinMode(D_Green, OUTPUT);
+  
+
+}
+
+void loop()
+{
+  
+  digitalWrite(A_Red, HIGH);
+  digitalWrite(B_Red, HIGH);
+  digitalWrite(C_Red, HIGH);
+  digitalWrite(D_Red, HIGH);
+  
+  digitalWrite(A_Red, LOW);
+  digitalWrite(A_Yellow, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(A_Yellow, LOW);
+  digitalWrite(A_Green, HIGH);
+  delay(5000); // Wait for 60000 millisecond(s) means 60 seconds
+  digitalWrite(A_Green, LOW);
+  digitalWrite(A_Yellow, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(A_Yellow, LOW);
+  digitalWrite(A_Red, HIGH);
+  
+  digitalWrite(C_Red, LOW);
+  digitalWrite(C_Yellow, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(C_Yellow, LOW);
+  digitalWrite(C_Green, HIGH);
+  delay(60000); // Wait for 60000 millisecond(s) means 60 seconds
+  digitalWrite(C_Green, LOW);
+  digitalWrite(C_Yellow, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(C_Yellow, LOW);
+  digitalWrite(C_Red, HIGH);
+  
+  digitalWrite(B_Red, LOW);
+  digitalWrite(B_Yellow, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(B_Yellow, LOW);
+  digitalWrite(B_Green, HIGH);
+  delay(5000); // Wait for 60000 millisecond(s) means 60 seconds
+  digitalWrite(B_Green, LOW);
+  digitalWrite(B_Yellow, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(B_Yellow, LOW);
+  digitalWrite(B_Red, HIGH);
+  
+  digitalWrite(D_Red, LOW);
+  digitalWrite(D_Yellow, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(D_Yellow, LOW);
+  digitalWrite(D_Green, HIGH);
+  delay(2000); // Wait for 60000 millisecond(s) means 60 seconds
+  digitalWrite(D_Green, LOW);
+  digitalWrite(D_Yellow, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(D_Yellow, LOW);
+  digitalWrite(D_Red, HIGH);
+}
