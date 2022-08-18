@@ -46,48 +46,48 @@ void loop()
   digitalWrite(C_Red, HIGH);
   digitalWrite(D_Red, HIGH);
   
-  digitalWrite(A_Red, LOW);
   digitalWrite(A_Yellow, HIGH);
   delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(A_Red, LOW);
   digitalWrite(A_Yellow, LOW);
   digitalWrite(A_Green, HIGH);
-  delay(5000); // Wait for 60000 millisecond(s) means 60 seconds
+  delay(60000); // Wait for 60000 millisecond(s) means 60 seconds
   digitalWrite(A_Green, LOW);
   digitalWrite(A_Yellow, HIGH);
   delay(1000); // Wait for 1000 millisecond(s)
   digitalWrite(A_Yellow, LOW);
   digitalWrite(A_Red, HIGH);
   
-  digitalWrite(C_Red, LOW);
   digitalWrite(C_Yellow, HIGH);
   delay(1000); // Wait for 1000 millisecond(s)
   digitalWrite(C_Yellow, LOW);
+  digitalWrite(C_Red, LOW);
   digitalWrite(C_Green, HIGH);
-  delay(60000); // Wait for 60000 millisecond(s) means 60 seconds
+  delay(5000); 
   digitalWrite(C_Green, LOW);
   digitalWrite(C_Yellow, HIGH);
   delay(1000); // Wait for 1000 millisecond(s)
   digitalWrite(C_Yellow, LOW);
   digitalWrite(C_Red, HIGH);
   
-  digitalWrite(B_Red, LOW);
   digitalWrite(B_Yellow, HIGH);
   delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(B_Red, LOW);
   digitalWrite(B_Yellow, LOW);
   digitalWrite(B_Green, HIGH);
-  delay(5000); // Wait for 60000 millisecond(s) means 60 seconds
+  delay(5000); 
   digitalWrite(B_Green, LOW);
   digitalWrite(B_Yellow, HIGH);
   delay(1000); // Wait for 1000 millisecond(s)
   digitalWrite(B_Yellow, LOW);
   digitalWrite(B_Red, HIGH);
   
-  digitalWrite(D_Red, LOW);
   digitalWrite(D_Yellow, HIGH);
   delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(D_Red, LOW);
   digitalWrite(D_Yellow, LOW);
   digitalWrite(D_Green, HIGH);
-  delay(2000); // Wait for 60000 millisecond(s) means 60 seconds
+  delay(2000); 
   digitalWrite(D_Green, LOW);
   digitalWrite(D_Yellow, HIGH);
   delay(1000); // Wait for 1000 millisecond(s)
